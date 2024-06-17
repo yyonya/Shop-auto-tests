@@ -91,7 +91,7 @@ class Program
                 // "iPhone"
                 Random random = new Random();
                 int randomNumber = random.Next(11, 16);
-                Console.WriteLine($"Число '{randomNumber}");
+                // Console.WriteLine($"Число '{randomNumber}");
                 string xpath = $"//a[contains(@class,'catalog-item-n') and contains(@href,'/phones/apple/iphone-{randomNumber}/')]";
                 Thread.Sleep(3000);
                 DateTime startTimestampIphone = DateTime.UtcNow;
@@ -176,8 +176,8 @@ class Program
                 driver.Quit();
             }
 
-            // Thread.Sleep(TimeSpan.FromMinutes(1));
-            Thread.Sleep(TimeSpan.FromSeconds(1));
+            Thread.Sleep(TimeSpan.FromMinutes(5));
+            // Thread.Sleep(TimeSpan.FromSeconds(1));
 
         }
     }
